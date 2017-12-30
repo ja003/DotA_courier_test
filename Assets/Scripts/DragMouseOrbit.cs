@@ -1,9 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine;
 using System.Collections;
 
 public class DragMouseOrbit : MonoBehaviour
 {
+	[SerializeField]
+	private float distanceMultiply = 1;
+
+
 	public Transform target;
 	public float distance = 2.0f;
 	public float xSpeed = 20.0f;
@@ -38,6 +43,12 @@ public class DragMouseOrbit : MonoBehaviour
 				velocityX += xSpeed * Input.GetAxis("Mouse X") * distance * 0.02f;
 				velocityY += ySpeed * Input.GetAxis("Mouse Y") * 0.02f;
 			}
+			if(Math.Abs(Input.GetAxis("Mouse ScrollWheel")) > 0.01f)
+			{
+				distanceMultiply += -0.1f * Mathf.Sign(Input.GetAxis("Mouse ScrollWheel"));
+				distanceMultiply = Mathf.Max(0.1f, distanceMultiply);
+			}
+
 			rotationYAxis += velocityX;
 			rotationXAxis -= velocityY;
 			rotationXAxis = ClampAngle(rotationXAxis, yMinLimit, yMaxLimit);
@@ -52,7 +63,7 @@ public class DragMouseOrbit : MonoBehaviour
 				distance -= hit.distance;
 			}
 			Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
-			Vector3 position = rotation * negDistance + target.position;
+			Vector3 position = rotation * negDistance * distanceMultiply + target.position;
 
 			transform.rotation = rotation;
 			transform.position = position;
