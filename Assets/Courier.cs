@@ -5,44 +5,61 @@ using UnityEngine;
 
 public class Courier : MonoBehaviour
 {
-
 	[SerializeField] private float speed = 1;
 	[SerializeField] private float rotationSpeed = 1;
-	private Animator a;
-	public Courier otherCourier;
+	
+	[SerializeField] private Animator normal_a;
+	[SerializeField] private Animator flying_a;
+
+	[SerializeField]
+	private GameObject normalCourier;
+	[SerializeField]
+	private GameObject flyingCourier;
 
 
 	// Use this for initialization
 	void Start ()
 	{
-		a = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.W))
 		{
-			transform.position += -transform.forward * speed;
-			a.SetBool("walk", true);
+			transform.position += transform.forward * speed;
+			normal_a.SetBool("walk", true);
+			flying_a.SetBool("walk", true);
 		}
 		else
 		{
-			a.SetBool("walk", false);
+			normal_a.SetBool("walk", false);
+			flying_a.SetBool("walk", false);
 		}
 
 		if(Input.GetKey(KeyCode.A))
 		{
-			transform.Rotate(Vector3.up, -rotationSpeed);
+			transform.Rotate(transform.up, -rotationSpeed);
 		}
 		else if(Input.GetKey(KeyCode.D))
 		{
-			transform.Rotate(Vector3.up, rotationSpeed);
+			transform.Rotate(transform.up, rotationSpeed);
 		}
 	}
 
-	public void SwapCourier()
+	public void SwapCourier(DragMouseOrbit camera)
 	{
-		enabled = false;
-		otherCourier.enabled = true;
+		if (normalCourier.gameObject.activeSelf)
+		{
+			normalCourier.gameObject.SetActive(false);
+			flyingCourier.gameObject.SetActive(true);
+			camera.target = flyingCourier.transform;
+		}
+		else
+		{
+			normalCourier.gameObject.SetActive(true);
+			flyingCourier.gameObject.SetActive(false);
+			camera.target = normalCourier.transform;
+
+		}
 	}
 }

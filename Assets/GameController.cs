@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+	[SerializeField]
 	private Courier activeCourier;
-	[SerializeField]
-	private Courier normalCourier;
-	[SerializeField]
-	private Courier flyingCourier;
 
 	[SerializeField] private DragMouseOrbit camera;
 
 	// Use this for initialization
 	void Start ()
 	{
-		activeCourier = normalCourier;
-		normalCourier.otherCourier = flyingCourier;
-		flyingCourier.otherCourier = normalCourier;
-		camera.target = activeCourier.transform;
 	}
 	
 	// Update is called once per frame
@@ -31,8 +24,6 @@ public class GameController : MonoBehaviour
 
 	private void SwapCourier()
 	{
-		activeCourier.SwapCourier();
-		activeCourier = normalCourier.enabled ? normalCourier : flyingCourier;
-		camera.target = activeCourier.transform;
+		activeCourier.SwapCourier(camera);
 	}
 }

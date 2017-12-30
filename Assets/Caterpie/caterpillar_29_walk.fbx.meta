@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c3f1d972319228d48bf42ac2425cb1f9
-timeCreated: 1514648135
+guid: e01ac93a511d9a84ba6dd8ad7d48fc98
+timeCreated: 1514655840
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -59,8 +59,8 @@ ModelImporter:
     400048: R_eye_dir
     400050: R_hand
     400052: R_hand_dir
-    4300000: caterpillar_idle
-    7400000: idlec28
+    4300000: caterpillar_walk
+    7400000: walkc29
     9500000: //RootNode
     13700000: //RootNode
   externalObjects:
@@ -96,17 +96,17 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idlec28
+      name: walkc29
       takeName: CINEMA_4D_Main
       firstFrame: 0
-      lastFrame: 90
+      lastFrame: 28
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

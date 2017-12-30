@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 86aa437451b80f94cbfa3c64d562ca56
-timeCreated: 1514647802
+guid: 75c7619b7e003c44ebfa0bdb533c294d
+timeCreated: 1514655627
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -17,9 +17,9 @@ ModelImporter:
     100018: horn
     100020: horn_dir
     100022: Joint
-    100024: Joint_3__root
-    100026: Joint__belly
-    100028: Joint_chest
+    100024: Joint__belly
+    100026: Joint_chest
+    100028: Joint_root
     100030: Joint_tail_0
     100032: Joint_tail_1
     100034: L_eye
@@ -32,7 +32,6 @@ ModelImporter:
     100048: R_eye_dir
     100050: R_hand
     100052: R_hand_dir
-    100054: Joint_root
     400000: attach_eye_l
     400002: attach_eye_r
     400004: attach_hitloc
@@ -45,9 +44,9 @@ ModelImporter:
     400018: horn
     400020: horn_dir
     400022: Joint
-    400024: Joint_3__root
-    400026: Joint__belly
-    400028: Joint_chest
+    400024: Joint__belly
+    400026: Joint_chest
+    400028: Joint_root
     400030: Joint_tail_0
     400032: Joint_tail_1
     400034: L_eye
@@ -60,9 +59,8 @@ ModelImporter:
     400048: R_eye_dir
     400050: R_hand
     400052: R_hand_dir
-    400054: Joint_root
-    4300000: caterpillar_walk
-    7400000: walkc28
+    4300000: caterpillar_idle
+    7400000: idlec29_3
     9500000: //RootNode
     13700000: //RootNode
   externalObjects:
@@ -98,10 +96,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: walkc28
+      name: idlec29_3
       takeName: CINEMA_4D_Main
       firstFrame: 0
-      lastFrame: 28
+      lastFrame: 90
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
