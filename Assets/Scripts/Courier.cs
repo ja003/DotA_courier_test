@@ -17,6 +17,7 @@ public class Courier : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		flyingCourier.SetActive(false);
 	}
 	
 	// Update is called once per frame
