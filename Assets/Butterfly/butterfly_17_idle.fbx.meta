@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: d94515c99506fbb4ea8ee49daa4aaced
+timeCreated: 1514638317
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: feeler_l_1
+    100004: feeler_l_2
+    100006: feeler_l_3
+    100008: feeler_l_root
+    100010: feeler_r_1
+    100012: feeler_r_2
+    100014: feeler_r_3
+    100016: feeler_r_root
+    100018: hand_l
+    100020: hand_l_root
+    100022: hand_r
+    100024: hand_r_root
+    100026: head
+    100028: horn_end
+    100030: horn_start
+    100032: leg_l
+    100034: leg_l_root
+    100036: leg_r
+    100038: leg_r_root
+    100040: neck
+    100042: pack
+    100044: pack_root
+    100046: Root
+    100048: root
+    100050: wing_l
+    100052: wing_r
+    100054: wings_l_root
+    100056: wings_r_root
+    100058: wings_root
+    400000: //RootNode
+    400002: feeler_l_1
+    400004: feeler_l_2
+    400006: feeler_l_3
+    400008: feeler_l_root
+    400010: feeler_r_1
+    400012: feeler_r_2
+    400014: feeler_r_3
+    400016: feeler_r_root
+    400018: hand_l
+    400020: hand_l_root
+    400022: hand_r
+    400024: hand_r_root
+    400026: head
+    400028: horn_end
+    400030: horn_start
+    400032: leg_l
+    400034: leg_l_root
+    400036: leg_r
+    400038: leg_r_root
+    400040: neck
+    400042: pack
+    400044: pack_root
+    400046: Root
+    400048: root
+    400050: wing_l
+    400052: wing_r
+    400054: wings_l_root
+    400056: wings_r_root
+    400058: wings_root
+    4300000: butterfly
+    7400000: idleb17
+    9500000: //RootNode
+    13700000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: fbcf4638be49aea44a677caea7b945a1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idleb17
+      takeName: CINEMA_4D_Main
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
